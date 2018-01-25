@@ -1,0 +1,145 @@
+﻿﻿
+<Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60F196D6-55C9-4401-96EE-1F26BFBE9BC7}
+	EndGlobalSection
+EndGlobal></Microsoft>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffd800;
+            background-image: url(C:\Users\ClevelandCodes\Downloads/crew.jpg);
+            background-position: center bottom;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+            opacity: 1.0;
+        }
+
+        .header {
+            border-radius: 50px / 15px;
+            background-color: #ff0000;
+            height: 300px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #ffd800;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .topnav a:hover {
+                    background-color: #ffffff;
+                    color: black;
+                }
+
+
+        .column {
+            border-radius: 50px / 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #ffffff;
+            background-color: #000000;
+            float: left;
+            padding: 10px;
+        }
+
+            .column.side {
+                width: 25%;
+            }
+
+
+            .column.middle {
+                width: 50%;
+            }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<div id="body">
+
+    <div class="header">
+        <h1>Todd Rhein<img src="C:\Users\ClevelandCodes\Pictures/todd.jpg" width="180" height="240" align="left" /></h1>
+    </div>
+
+    <div class="topnav">
+        <a href="http://localhost:49821/Contact%20Me.html">Contact Me</a>
+        <a href="http://localhost:49821/Cleveland%20Codes%20Schedule.html">Cleveland Codes</a>
+        <a href="http://localhost:49821/about%20me.html">More About Me</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Favorite Sports Teams</h2>
+            <p>
+                <dl>
+                    <dt>Manchester United</dt>
+                    <dd>Arguably the biggest soccer team in the world and have been my favorite team since the 1999 classic FA Cup semi-final game against Arsenal.</dd>
+                    <dt>Pittsburgh Penguins</dt>
+                    <dd>My mom being from Pittsburgh and never having an NHL team in Cleveland, the Pens were the obvious choice for me.  Also if i picked anyone else my Grandmother probably would have disowned me.</dd>
+                    <dt>Cleveland Indians</dt>
+                    <dd>Growing up in Cleveland my family has always been a huge baseball family. My Grandfather played pro-ball in the 40's before being drafted, my dad coached Berea High School to 10 state finals, winning 8 of them.  Baseball is a family passion passed down from generation to generation along with our love of the Tribe.</dd>
+                    <dt>Olympique Lyonnais</dt>
+                    <dd>The thing that attracted me most to Lyon is their insane and die-hard fan base, their chants, their attitude, everything about the team appealed to me. </dd>
+                    <dt>Columbus Crew</dt>
+                    <dd>At the moment i have a very torrid love affair with the Crew.  I've been watching and going to Crew games since a very young age, but now the crooked owner is trying to move the team to Austin, Texas and i have to decide if watching and supporting what maybe their last year of their existence is worth the heartbreaks i know will surely come at season's end.</dd>
+                </dl>
+            </p>
+        </div>
+        <div class="column middle">
+            <h2>About Me</h2>
+            <p>I am 28 years old.  I am a veteran retail manager and current barista at a 24 hour coffee shop in Cleveland.  I am taking the Cleveland Codes program at Tri-C Metro to hopefully land a career in software development and with the guidance of our teacher and coding guru Sam Nasr i believe i will accomplish that goal.</p>
+            <p>In my spare time i love playing video games, watching movies, reading, and watching sports.  Watching soccer, hockey, and baseball is my favorite thing to do with friends, whether we go to a game or watch it on tv, we always manage to have a ton of fun.</p>
+        </div>
+        <div class="column side">
+            <h2>Favorite Quotes</h2>
+            <p>
+                <em><q>I am a man of fortune, and i must seek my fortune</q></em></br>
+                -Henry Avery
+            </p>
+            <p>
+                <em><q>What came first? The music or the misery? People worry about kids playing with guns or watching violent videos, that some sort of culture of violence will take them over.  Nobody worries about kids listening to thousands, literally thousands of songs about heartbreak, rejection, pain, misery, and loss.  Did I listen to pop music because I was miserable or was I miserable because I listened to pop music. l</q></em></br>
+                -Nick Hornby
+            </p>
+        </div>
+    </div>
+    <img src="C:\Users\ClevelandCodes\Downloads/crew.jpg" width="620" height="620"/>
+    </divbody>
+</html>
